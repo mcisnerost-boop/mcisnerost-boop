@@ -1,58 +1,81 @@
-body{
+:root {
+   
+    --text-small: 0.875rem;
+    --text-base: 1rem;
+    --text-secondary: 1.5rem;
+    --text-third: 2rem;
+    --text-principle: 6rem;
 
-    background-color: #f3eebb;
-    color: #7e7a40;
-    font-size: 25px;
-   font-family: 'Franklin Gothic Medium', sans-serif;
-}
-a{
-    color: #f3eebb;
-    font-size: 25px;
-    /*background-color: rgb(224, 49, 36);*/
+    --color-bg: #f3eebb;
+    --color-text: #7e7a40;
+    --color-link: #082e67;
+
+    --font-title: "feline", sans-serif;
+    --font-body: "Franklin Gothic Medium", sans-serif;
+    
+    --text-align-title: center;
+    --text-align-2: right;
+ 
+
 }
 
-h1{
-    background-color: #7e7a40;
+body {
+    background-color: var(--color-bg);
+    font-family: var(--font-body);
+    color: var(--color-text);
+    font-size: var(--text-base);
+}
+
+a {
+    color: var(--color-bg);
+}
+
+h1 {
+    text-align: var(--text-align-title);
+    color: var(--color-bg);
+    font-family: var(--font-title);
+    background-color: var(--color-text);
+    font-size: var(--text-principle);
+}
+
+ol b {
+    background-color: #bb3d3b;
     color: #f3eebb;
-    text-align: center;
     font-family: "feline", sans-serif;
     font-weight: 250;
+    font-style: italic;
+    font-size: var(--text-secondary);
 }
 
-/*header{
-    
-    ol{ 
-        b{color: rgb(245, 224, 183);} 
-       
-    }
-
-}*/
-ol{
-
-  b{background-color: #bb3d3b; color: #f3eebb; font-family: "feline", sans-serif;
-    font-weight: 250; font-style: italic; font-size: 35px; }
-  
+main {
+    font-size: var(--text-secondary);
+    width: 100%;
 }
 
-main p{
-    i{
-        color: #bb3d3b;
-    }
-    /*text-align: right;*/
+main p {
+    text-align: var(--text-align-2);
+    width: 100%;
 }
 
-main{
-    font-size: 25px;
+main p i {
+    color: #bb3d3b;
+    width: 100%;
+    stroke-width: 50%;
+    font-size: var(--text-base);
 }
 
-footer{
-    
-    background-color: #7e7a40;
-    text-align: center; 
+footer {
+    background-color: var(--color-text);
+    text-align: center;
+    stroke-width: 20%;
+    font-size: var(--text-secondary);
+    text-align: var(--text-align-title);
 
 }
 
-/*height="150"*/
+header, main, footer{
 
+max-width: 100ch;
+margin: 0 auto;
 
-
+}

@@ -8,7 +8,7 @@
 
     --color-bg: #f3eebb;
     --color-text: #7e7a40;
-    --color-link: #082e67;
+    --color-link: #bb3d3b;
 
     --font-title: "feline", sans-serif;
     --font-body: "Franklin Gothic Medium", sans-serif;
@@ -26,9 +26,75 @@ body {
     font-size: var(--text-base);
 }
 
-a {
-    color: var(--color-bg);
+
+.social {
+    display: inline-block;          /* para que padding y margin funcionen bien */
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 1.5em;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    /*background-color: var(--color-bg);
+    padding: 1em;
+    margin: .5em;
+    border-radius: 1.5em;
+    text-decoration: none; 
+    transition: all 0.3s ease-in-out;*/
+
 }
+
+.social:hover {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+}
+
+#ig-link,
+#mail-link,
+#web-link {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+#ig-link:hover,
+#mail-link:hover,
+#web-link:hover {
+  background-color: var(--color-bg);
+  color: var(--color-link);
+}
+
+a {
+    text-decoration: underline;
+    color: var(--color-bg);
+
+}
+
+a:hover {
+color:#bb3d3b;
+}
+
+/*.titulo-intereses {
+  background-color: #bb3d3b;      
+  color: #f3eebb;                 
+  font-family: "feline", sans-serif;
+  font-weight: 250;
+  font-style: italic;
+  font-size: var(--text-secondary);
+  padding: 0.2em 0.4em;           
+  border-radius: 0.3em;           
+  display: inline-block;         
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.titulo-intereses:hover {
+  transform: scale(1.1);          
+  background-color: #7e7a40;      
+  cursor: pointer;                
+
+}*/
+
+ /*<b class="titulo-intereses">Interesés:</b>*/
 
 h1 {
     text-align: var(--text-align-title);
